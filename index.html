@@ -73,6 +73,53 @@ color:var(--dark);
 border: 1px solid var(--main);
 }
 
+/* --- ส่วนที่แก้ไข: สไตล์สำหรับตัวอย่างผลงาน --- */
+.portfolio-container {
+    margin-top: 15px;
+}
+
+.portfolio-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.portfolio-item {
+    flex: 1;
+    background: #FFFFFF;
+    border: 2px dashed var(--main);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item:hover {
+    background-color: var(--accent);
+}
+
+.portfolio-number {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.portfolio-label {
+    font-size: 12px;
+    opacity: 0.8;
+}
+/* ------------------------------------------- */
+
 .btn{
 display:block;
 text-align:center;
@@ -166,7 +213,7 @@ border:1px solid var(--main);
 <div class="section center" style="border:none;box-shadow:none;background:transparent;">
 
 <div class="logo">
-<img src="logo.jpg" alt="brisgelinerosenoir logo">
+<img src="IMG_9087.jpeg" alt="brisgelinerosenoir logo">
 </div>
 
 <h1>brisgelinerosenoir</h1>
@@ -181,9 +228,23 @@ border:1px solid var(--main);
 <div class="badge">เว็บเติมเกม 🎮</div>
 </div>
 
-<a href="https://line.me/ti/p/spUXkAegyd" class="btn btn-outline" target="_blank">
-    เช็คคิวงาน ✨
-</a>
+<div class="portfolio-container">
+    <h3 class="portfolio-title">✨ ตัวอย่างเว็บที่บริสทำ</h3>
+    <div class="portfolio-grid">
+        <a href="https://pimploykuki.github.io/brisgelinekuki/" class="portfolio-item" target="_blank">
+            <span class="portfolio-number">1</span>
+            <span class="portfolio-label">ดูผลงาน</span>
+        </a>
+        <a href="https://pimploykuki.github.io/amerii/" class="portfolio-item" target="_blank">
+            <span class="portfolio-number">2</span>
+            <span class="portfolio-label">ดูผลงาน</span>
+        </a>
+        <a href="https://pimploykuki.github.io/horoscopewithnegra/" class="portfolio-item" target="_blank">
+            <span class="portfolio-number">3</span>
+            <span class="portfolio-label">ดูผลงาน</span>
+        </a>
+    </div>
+</div>
 </div>
 
 <div class="section">
